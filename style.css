@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #eff3ff;
+    --drop-shadow: 0 20px 30px black;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.container{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#card{
+    position: relative;
+    width: 100%;
+    padding: 30px 30px;
+    box-shadow: var(--drop-shadow);
+    border-radius: 10px;
+}
+
+#card img{
+    display:block;
+    width:300px;
+    max-height:180px;
+    position:relative;
+    margin:30 auto;
+}
+
+.types{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.types span{
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#attack p{
+    color: red;
+    font-weight: 200;
+}
+
+#defence p{
+    color: blue;
+    font-weight: 200;
+}
+
+#speed p{
+    color: purple;
+    font-weight: 200;
+}
+
+.hp
+{
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding:  8px 0;
+    border-radius: 45%;
+    margin-right:auto;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: #23c483;
+}
+
+.poke-name
+{
+    text-align: center;
+    font-weight: 600;
+}
+
+#btn{
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffffff 80%;
+    border: 0.1;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#btn:hover
+{
+    background-color:#23c483;
+    box-shadow:0px 15px 20px rgba(46 229 157 0.4);
+    color:#fff;
+    transform:translateY(-7px);
+}
+
+#btn:active
+{
+
+    transform:translateY(1px);
+}
+
+.dark-theme{
+    --bg-color: #000000;
+    --drop-shadow: 0 10px 20px white;
+}
+
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+}
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: padding-left 0.5s, background 0.5s;
+}
+
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #0a0a0a;
+    
+}
